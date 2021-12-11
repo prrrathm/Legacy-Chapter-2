@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<head>
+<title>Legacy</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="navi">
+        <a>Home</a>
+        <a>About</a>
+        <a>Events</a>
+        <a>Team</a>
+    </div>
+    <div class="imagi">
+        <div class="onei"></div>
+        <div class="tit">Legacy</div>
+    </div>
+    <div id="about">
+        <h1>About Us</h1>
+        <h1>Venue</h1>
+        <h1>Date</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos velit maiores culpa! At quibusdam tenetur molestias obcaecati saepe a nisi amet hic assumenda, unde odio aperiam autem incidunt, ipsum laborum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos velit maiores culpa! At quibusdam tenetur molestias obcaecati saepe a nisi amet hic assumenda, unde odio aperiam autem incidunt, ipsum laborum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos velit maiores culpa! At quibusdam tenetur molestias obcaecati saepe a nisi amet hic assumenda, unde odio aperiam autem incidunt, ipsum laborum!</p>
+    </div>
+    <div id="tim">Time Left</div>
+    <div id="countdown"></div>
+    <div id="events">
+        <div style="padding: 50px; font-size: 100px; letter-spacing: 30px;text-align: left;">Events</div>
+        <div class="box">
+            <div class="tri" style="grid-row: 1/2;"></div>
+            <div class="content"><a href="front-end.html">Front-End<br> Battle</a></div>
+            <div class="tri" style="grid-row: 8/9; border-top: 50px solid #eeeeee; border-bottom: 0px solid cornflowerblue;"></div>
+        </div>
+        <div class="box">
+            <div class="tri" style="grid-row: 1/2;"></div>
+            <div class="content"><a href="astro.html">Astro<br> Quiz</a></div>
+            <div class="tri" style="grid-row: 8/9; border-top: 50px solid #eeeeee; border-bottom: 0px solid cornflowerblue;"></div>
+        </div>
+        <div class="box">
+            <div class="tri" style="grid-row: 1/2;"></div>
+            <div class="content"><a href="it.html">I.T.<br>Quiz</a></div>
+            <div class="tri" style="grid-row: 8/9; border-top: 50px solid #eeeeee; border-bottom: 0px solid cornflowerblue;"></div>
+        </div>
+        <div class="box">
+            <div class="tri" style="grid-row: 1/2;"></div>
+            <div class="content"><a href="pubg.html">Battle<br>Ground</a></div>
+            <div class="tri" style="grid-row: 8/9; border-top: 50px solid #eeeeee; border-bottom: 0px solid cornflowerblue;"></div>
+        </div>
+        <div class="box">
+            <div class="tri" style="grid-row: 1/2;"></div>
+            <div class="content"><a href="coding.html">Program<br>Decoding</a></div>
+            <div class="tri" style="grid-row: 8/9; border-top: 50px solid #eeeeee; border-bottom: 0px solid cornflowerblue;"></div>
+        </div>
+        <div class="box">
+            <div class="tri" style="grid-row: 1/2;"></div>
+            <div class="content"><a href="treasure.html">Treasure<br>Hunt</a></div>
+            <div class="tri" style="grid-row: 8/9; border-top: 50px solid #eeeeee; border-bottom: 0px solid cornflowerblue;"></div>
+        </div>
+    </div>
+    <div class="teachers">
+    <div style="padding: 50px; font-size: 60px; letter-spacing: 20px; text-align: left;">Principal Mam's Message</div>
+    <div class="teach-box">
+        <img src="princi.jpg" class="phot">
+        <p class="teach-para">
+            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, tempore. Quam, iure! Soluta, eaque animi ad aut sint aliquam iusto. Temporibus perferendis natus placeat dignissimos sapiente consequatur commodi nostrum quod?'
+        </p>
+    </div>
+    <div style="padding: 50px; font-size: 50px; letter-spacing: 20px; text-align: left;">Vice Principal's Message</div>    
+    <div class="teach-box">
+            <img src="amar.jpg" class="phot">
+            <p class="teach-para">
+                'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure doloremque molestias tempora fugit id sit dolor totam quia, minima eveniet dicta? Minima sed a vero iure error maiores, nisi eveniet!'
+            </p>
+        </div>    
+    </div>
+    <div id="students"><div class="black-s">
+        <strong>Meet Our Whole Team</strong> 
+        <br>
+        <a>Let's Go ></a>
+        </div>
+    </div>
+
+    <div id="contacts">
+        <h1>Contact Us on:</h1>
+        <a class="social" id="sociala"><strong>InstaGram:<br> @our_legacy</strong></a>
+        <a class="social" id="socialb"><strong>FaceBook Page:<br> Legacy Chapter-2</strong></a>
+        <a class="social" id="socialc"><strong>Email:<br> thegreatpratham18@gmail.com</strong></a>
+        <a class="social" id="sociald"><strong>Telephone No:<br> 8178094524</strong></a>
+    </div>
+    <div id="end">
+        <h3>Creator's Credit - Pratham Sharma and Team.<h3><br>
+        <p>All Images used belong to their designated creators and are used under the guidance of Fare to use Act<br> we do not claim any Possesion.</p>    
+        </div>
+</body>
+<script>
+    var m = $(window).width();
+    console.log(m);
+    
+
+    $(window).scroll(function(){
+        var x = $(window).scrollTop();
+        var a;
+        if(x < 100)
+        {
+            $('.imagi').css({'background-size':'',});
+            $('.onei').css({'opacity':'0.01',});
+            $('.navi').css({'background-color':'transparent','color':'#eeeeee',});
+        }    
+        else if(x >= 100){
+                a = x;
+                $('.imagi').css({'background-size':''+ x +'%',});
+                $('.onei').css({'opacity':'' + x/500 + '',});
+                $('.navi').css({'background-color':'#eeeeee','color':'#101010',});
+                if(x >= 450){
+                    $('.imagi').css({'background-size':'500%',});
+                }
+
+            }         
+    })
+    // Set the date we're counting down to
+    var countDownDate = new Date("Apr 25, 2019 15:37:25").getTime();
+
+    // Update the count down every 1 second
+    var b = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+        
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+        
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+    // Output the result in an element with id="demo"
+    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+        
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(b);
+        document.getElementById("countdown").innerHTML = "EXPIRED";
+    }
+    }, 1000);
+
+</script>
+</html>

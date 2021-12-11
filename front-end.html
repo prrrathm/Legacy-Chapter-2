@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+<title>HEXAGON</title>
+<script src="jquery3.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+body{ 
+    background-color: firebrick;
+    margin: 0;
+    background-image: url('cr.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: monospace;
+    letter-spacing: 5px;
+    word-spacing: 8px;
+}
+.one{
+    min-height: 100vh;
+    width: auto;
+    background-color: #eeeeee;
+    padding: 80px;
+    padding-top: 200px;
+}
+.oye{
+    padding: 0;
+    height: 0;
+    width: auto;
+    border-bottom: 50vh solid #eeeeee;
+    margin-top: 100px; 
+}
+.heading{
+    padding: 10px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    font-size: 150px;
+    color: ghostwhite;
+    letter-spacing: 10px;
+    font-weight: 800;
+    text-align: center;
+}
+.black{
+    height: 100%;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 200px;
+}
+.head{
+    color: #101010; 
+    font-size: 50px;
+    font-weight: 800;
+    margin-top: 50px; 
+}
+.text{
+    font-size: 30px;
+    width: 70%;
+    padding-top: 50px;
+    font-weight: 500;
+    color: #202020;
+}
+
+</style>
+</head>
+<body>
+<div class="black">
+<div class="heading">FRONT-END<br>BATTLE</div>
+<div class="oye"></div>
+<div class="one">
+    <div class="head">About The Event:</div>
+    <div class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis nulla laboriosam facilis, labore quo rerum sint minus sed obcaecati unde maxime pariatur at, nihil quasi rem recusandae tenetur cumque provident?</div>
+    <div class="head">Rules and Protocols:</div>
+    <div class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis nulla laboriosam facilis, labore quo rerum sint minus sed obcaecati unde maxime pariatur at, nihil quasi rem recusandae tenetur cumque provident?</div>
+    <div class="head">Submission Date:</div>
+    <div class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis nulla laboriosam facilis, labore quo rerum sint minus sed obcaecati unde maxime pariatur at, nihil quasi rem recusandae tenetur cumque provident?</div>
+    <div class="head">Event Heads:</div>
+    <div class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis nulla laboriosam facilis, labore quo rerum sint minus sed obcaecati unde maxime pariatur at,</div>
+</div>           
+<div class="oye" style="transform: rotate(180deg); margin-top: 0;"></div> 
+</div>
+</body>
+<script>
+    m = $(window).width();
+    console.log(m);
+    $('.oye').css({
+        'border-right': '' + m/2 + 'px solid transparent',
+        'border-left': '' + m/2 + 'px solid transparent',
+    })
+</script>
+</html>
